@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>স্বেচ্ছাসেবী সংগঠন - Volunteer Network</title>
+    <style>
+        /* CSS Reset & Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #1b5e20;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #a5d6a7;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=80') center/cover;
+            height: 70vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: #e53935;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #c62828;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #1b5e20;
+        }
+
+        /* Cards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #2e7d32;
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav a {
+                margin: 0 0.5rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">স্বেচ্ছাসেবী নেটওয়ার্ক</div>
+        <nav>
+            <a href="#home">হোম</a>
+            <a href="#about">আমাদের কথা</a>
+            <a href="#activities">কার্যক্রম</a>
+            <a href="#join">যুক্ত হন</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>মানুষের সেবায় আমরা সর্বদা প্রস্তুত</h1>
+        <p>সামাজিক উন্নয়ন ও মানবতার সেবায় আমাদের সাথে যোগ দিন। আপনার ছোট একটি উদ্যোগ বদলে দিতে পারে কারো জীবন।</p>
+        <a href="#join" class="btn">স্বেচ্ছাসেবক হিসেবে যুক্ত হন</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">আমাদের সম্পর্কে</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            আমরা একটি অরাজনৈতিক ও অলাভজনক স্বেচ্ছাসেবক সংগঠন। আমাদের মূল লক্ষ্য হলো সমাজে পিছিয়ে পড়া মানুষদের সহায়তা করা, রক্তদান সচেতনতা বৃদ্ধি করা এবং যেকোনো দূর্যোগে মানুষের পাশে দাঁড়ানো।
+        </p>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities">
+        <h2 class="section-title">আমাদের কার্যক্রম</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>রক্তদান কর্মসূচি</h3>
+                <p>জরুরি মুহূর্তে বিনামূল্যে রক্তের ব্যবস্থা করা এবং নিয়মিত রক্তদান শিবির পরিচালনা করা।</p>
+            </div>
+            <div class="card">
+                <h3>ত্রাণ ও সহায়তা</h3>
+                <p>বন্যা, শীত বা যেকোনো প্রাকৃতিক দুর্যোগে ক্ষতিগ্রস্তদের মাঝে খাদ্য ও শীতবস্ত্র বিতরণ।</p>
+            </div>
+            <div class="card">
+                <h3>শিক্ষা সহায়তা</h3>
+                <p>সুবিধাবঞ্চিত শিশুদের বিনামূল্যে শিক্ষাসামগ্রী প্রদান এবং পড়াশোনায় সহায়তা করা।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section / Form -->
+    <section id="join">
+        <h2 class="section-title">স্বেচ্ছাসেবক হিসেবে যোগ দিন</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">আপনার পুরো নাম:</label>
+                <input type="text" id="name" name="name" placeholder="যেমন: রহিম আহমেদ" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">মোবাইল নম্বর:</label>
+                <input type="tel" id="phone" name="phone" placeholder="017XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="blood">রক্তের গ্রুপ:</label>
+                <select id="blood" name="blood">
+                    <option value="">সিলেক্ট করুন</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">বর্তমান ঠিকানা:</label>
+                <textarea id="address" name="address" rows="3" placeholder="আপনার জেলা/থানা লিখুন"></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">আবেদন জমা দিন</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 স্বেচ্ছাসেবী সংগঠন। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p>যোগাযোগ: rsbb@volunteer.org | মোবাইল: +8801605090103</p>
+    </footer>
+
+</body>
+</html>
